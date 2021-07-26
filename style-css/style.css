@@ -88,6 +88,9 @@ header {
 
 .toggle-bars {
   display: none;
+  float: right;
+  position: absolute;
+  right: 30px;
 }
 
 .fa-bars {
@@ -237,6 +240,7 @@ header {
   color: #827b7b;
 }
 
+/* Full about section */
 .full-about {
   overflow: hidden;
   padding: 100px 0;
@@ -555,6 +559,7 @@ header {
 
 .testimonial-item {
   margin-top: 70px;
+  flex-wrap: wrap;
 }
 
 .testimonial-full {
@@ -752,4 +757,10 @@ header {
     line-height: 60px;
     padding: 0;
   }
+  
+  /* Full about section */
+  .full-box, .testimonial-full{
+    width: 48%;
+  }
+
 }
