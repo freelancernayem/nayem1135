@@ -803,36 +803,39 @@ header {
     margin: 1rem 0;
   }
 
-  .page-header,
-  .team-details {
-    width: 45%;
-    margin: 0 .5rem;
+  .page-header {
+    width: 48%;
+    margin: .5rem;
   }
 
   .page-header:nth-child(3) {
-    width: 80%;
+    width: 95%;
+    margin-top: 1rem;
   }
+
+  .team-details {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .form-input,
+  .submit-btn {
+    width: 100%;
+  }
+
 }
 
-/*
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-  .pricing-section{
+  .pricing-section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
   }
 
-  .video-left {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .content-head,
-  .full-box, .page-header{
+  .page-header {
     width: 100%;
     margin: 1rem 0;
   }
 }
-*/
