@@ -90,7 +90,7 @@ header {
   display: none;
   float: right;
   position: absolute;
-  right: 30px;
+  right: 15px;
 }
 
 .fa-bars {
@@ -146,7 +146,7 @@ header {
 
 .buttond-div {
   position: absolute;
-  right: 1rem;
+  right: 2rem;
 }
 
 .buttond-div a {
@@ -733,7 +733,6 @@ header {
     top: 100%;
     left: 0;
     right: 0;
-    transform: translateY(1);
   }
 
   .main-navber ul li {
@@ -751,9 +750,12 @@ header {
   }
 
   .buttond-div {
+    position: relative;
+    width: 100%;
     text-align: center;
-    margin: 1rem;
+    margin: 2rem;
     margin-top: 0;
+    margin-bottom: 1rem;
   }
 
   .buttond-div a {
@@ -886,13 +888,13 @@ header {
   .logo-img img {
     width: 3rem;
   }
-  
+
   .logo-img span {
     font-size: 20px;
     font-weight: 500;
   }
-  
-  .fa-bars{
+
+  .fa-bars {
     font-weight: 500;
   }
 }
