@@ -19,6 +19,8 @@
 }
 
 .full-bar,
+#navigation,
+.full-img,
 .banner-btn,
 .full-contents-wrapper,
 .full-colum,
@@ -32,13 +34,17 @@
 .full-contact,
 .input-group,
 .full-footer,
-.social-icon a{
+.social-icon a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* Full section CSS */
+header {
+  height: 100vh;
+}
+
 .full-section {
   position: fixed;
   background-color: #fff;
@@ -50,7 +56,13 @@
 }
 
 .full-bar {
+  position: relative;
+}
+
+.full-bar,
+#navigation {
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .logo-img img {
@@ -74,12 +86,21 @@
   color: #ddd;
 }
 
+.toggle-bars {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .main-navber ul li {
   display: inline-block;
   padding: 0 20px;
   list-style: none;
   line-height: 75px;
-
 }
 
 .main-navber ul li a {
@@ -108,7 +129,6 @@
   transition: .4s;
   transform: scaleY(0);
   transform-origin: top center;
-
 }
 
 .main-navber ul li:hover ul {
@@ -119,10 +139,6 @@
 
 .main-navber ul li a:hover {
   color: rgb(11, 11, 247);
-}
-
-.buttond-div{
-  float: right;
 }
 
 .buttond-div a {
@@ -152,6 +168,7 @@
   background-attachment: fixed;
   padding: 160px 0;
   margin-top: 82px;
+  height: 100vh;
 }
 
 .banner {
@@ -638,7 +655,8 @@
   margin-bottom: 30px;
 }
 
-.left-map, .right-div{
+.left-map,
+.right-div {
   width: 48%;
 }
 
@@ -659,7 +677,7 @@
   padding: 30px;
 }
 
-.full-footer{
+.full-footer {
   justify-content: space-between;
 }
 
@@ -672,12 +690,12 @@
   font-weight: 400;
 }
 
-.social-icon{
+.social-icon {
   position: absolute;
   right: 30px;
 }
 
-.social-icon a{
+.social-icon a {
   float: left;
   text-decoration: none;
   font-size: 25px;
@@ -694,4 +712,44 @@
 .social-icon a:hover {
   background-color: rgb(63, 35, 189);
   color: #fff;
+}
+
+@media (max-width: 840px) {
+  .toggle-bars {
+    display: block;
+  }
+
+  #navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .main-navber ul li {
+    display: block;
+    background-color: #fff;
+  }
+
+  .main-navber ul li a {
+    margin-bottom: 5px;
+  }
+
+  .main-navber ul li ul {
+    width: 100%;
+    z-index: 100;
+  }
+
+  .buttond-div {
+    text-align: center;
+    margin: 1rem;
+    margin-top: 0;
+  }
+
+  .buttond-div a {
+    display: block;
+    line-height: 60px;
+    padding: 0;
+  }
 }
