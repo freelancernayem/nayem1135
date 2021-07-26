@@ -768,6 +768,14 @@ header {
 
   .full-contact {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-map,
+  .right-div {
+    width: 100%;
+    margin: 2rem;
   }
 
 }
@@ -779,7 +787,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .video-left {
@@ -798,8 +806,12 @@ header {
   .page-header,
   .team-details {
     width: 50%;
+    margin: 0 .5rem;
   }
 
+  .page-header:nth-child(3) {
+    width: 100%;
+  }
 }
 
 /*
