@@ -774,7 +774,7 @@ header {
 
   .left-map,
   .right-div {
-    width: 100%;
+    width: 90%;
     margin: 2rem;
   }
 
@@ -805,12 +805,12 @@ header {
 
   .page-header,
   .team-details {
-    width: 50%;
+    width: 45%;
     margin: 0 .5rem;
   }
 
   .page-header:nth-child(3) {
-    width: 100%;
+    width: 80%;
   }
 }
 
