@@ -146,7 +146,7 @@ header {
 
 .buttond-div {
   position: absolute;
-  right: 0;
+  right: 1rem;
 }
 
 .buttond-div a {
@@ -880,4 +880,15 @@ header {
     position: static;
   }
 
+}
+
+@media (max-width: 368px) {
+  .logo-img img {
+    width: 3rem;
+  }
+
+  .logo-img span {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
