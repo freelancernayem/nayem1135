@@ -254,7 +254,6 @@ header {
   font-size: 60px;
   margin-bottom: 30px;
   font-weight: 600;
-
 }
 
 .header-1 h3 {
@@ -499,19 +498,12 @@ header {
 .full-ads {
   overflow: hidden;
   justify-content: space-evenly;
-  height: 450px;
 }
 
 .heading-01 h1 {
   font-size: 50px;
   margin-bottom: 80px;
   font-weight: 500;
-}
-
-.full-content-text,
-.full-content-text-2 {
-  width: 48%;
-  padding: 1rem;
 }
 
 .heading-02 p {
@@ -531,6 +523,10 @@ header {
 
 .left-img {
   margin-right: 10px;
+}
+
+.left-img img {
+  width: 100%;
 }
 
 .full-ads-text {
@@ -732,6 +728,7 @@ header {
     top: 100%;
     left: 0;
     right: 0;
+    transform: translateY(1);
   }
 
   .main-navber ul li {
@@ -778,16 +775,12 @@ header {
     margin: 2rem;
   }
 
-}
-
-@media (max-width: 768px) {
-
   .full-contents-wrapper,
   .full-colum {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .video-left {
@@ -804,11 +797,6 @@ header {
   }
 
   .page-header {
-    width: 48%;
-    margin: .5rem;
-  }
-
-  .page-header:nth-child(3) {
     width: 95%;
     margin-top: 1rem;
   }
@@ -821,11 +809,34 @@ header {
   .form-input,
   .submit-btn {
     width: 100%;
+    margin: .5rem 0;
   }
 
+  .full-ads {
+    flex-direction: column;
+  }
+
+  .full-content-text,
+  .full-content-text-2 {
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
 
 @media (max-width: 600px) {
+  .banner-btn {
+    flex-direction: column;
+  }
+
+  .banner-btn .btn-a {
+    margin: .5rem 0;
+    width: 280px;
+  }
+
+  .header-1 h1,
+  .content-text h1 {
+    font-size: 2.6rem;
+  }
 
   .pricing-section {
     flex-direction: column;
@@ -838,4 +849,26 @@ header {
     width: 100%;
     margin: 1rem 0;
   }
+
+  .testimonial-item {
+    flex-direction: column;
+  }
+
+  .testimonial-full {
+    margin: 2.5rem 0;
+    padding: 0;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .full-footer {
+    flex-direction: column;
+  }
+
+  .social-icon {
+    position: static;
+  }
+
 }
