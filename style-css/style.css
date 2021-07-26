@@ -315,6 +315,7 @@ header {
 .pricing-section {
   margin-top: 30px;
   transition: .4s;
+  flex-wrap: wrap;
 }
 
 .page-header {
@@ -412,6 +413,7 @@ header {
 
 .team-box {
   padding-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .team-details {
@@ -757,10 +759,68 @@ header {
     line-height: 60px;
     padding: 0;
   }
-  
+
   /* Full about section */
-  .full-box, .testimonial-full{
+  .full-box,
+  .testimonial-full {
     width: 48%;
   }
 
+  .full-contact {
+    flex-direction: column;
+  }
+
 }
+
+@media (max-width: 768px) {
+
+  .full-contents-wrapper,
+  .full-colum {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .video-left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .content-head,
+  .full-box,
+  .page-header,
+  .team-details {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .page-header,
+  .team-details {
+    width: 50%;
+  }
+
+}
+
+/*
+@media (max-width: 768px) {
+
+  .pricing-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .video-left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .content-head,
+  .full-box, .page-header{
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+*/
