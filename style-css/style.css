@@ -144,6 +144,11 @@ header {
   color: rgb(11, 11, 247);
 }
 
+.buttond-div {
+  position: absolute;
+  right: 0;
+}
+
 .buttond-div a {
   text-decoration: none;
   font-size: 20px;
@@ -856,7 +861,11 @@ header {
 
   .testimonial-full {
     margin: 2.5rem 0;
-    padding: 0;
+    width: 100%;
+  }
+
+  .tastimonial-content {
+    width: 70%;
   }
 
   footer {
