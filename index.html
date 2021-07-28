@@ -1,76 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AppMap Theme</title>
+  
+  <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style-css/style.css">
 </head>
-<body>
+
+<body id="top">
   <header class="full-header">
-   <div class="full-section">
-    <div class="container">
-      <div class="full-bar clear">
-        <div class="logo-img">
+    
+    <!-- Full section -->
+    <div class="full-section">
+      <div class="container">
+        <div class="full-bar clear">
+          <div class="logo-img">
             <img src="image/logo 1.png" alt="logo">
-          <span>AppAMP Theme</span>
-        </div>
-        <div class="main-navber">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">live Demo  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            <ul>
-              <li><a href="#">Time Planner App</a></li>
-              <li><a href="#">Health Tracker App</a></li>
-            </ul>
-            </li>
-            <li><a href="#">Demo Blocks  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            <ul>
-              <li><a href="#">Headers</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Pricing Table & Article</a></li>
-              <li><a href="#">Team & Testimonial</a></li>
-             
-            </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="buttond-div">
-          <a href="#">Buy Now</a>
-        </div>
-      </div>
-    </div> 
-   </div>
-    <div class="full-img">
-      <div class="overly">
-        <div class="banner">
-         <div class="content-text">
-          <h3>Created to save your time</h3>
-          <h1>Time Planner App</h1>
-         </div>
-          <div class="banner-btn">
-            <a class="btn-a" href="#"><i class="fa fa-android" aria-hidden="true"></i> Google Play</a>
-            <a class="btn-a" href="#"><i class="fa fa-apple" aria-hidden="true"></i> App Store</a>
+            <span>AppAMP Theme</span>
+          </div>
+          <div id="navigation">
+            <div class="main-navber">
+              <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a>live Demo <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul>
+                    <li><a>Time Planner App</a></li>
+                    <li><a>Health Tracker App</a></li>
+                  </ul>
+                </li>
+                <li><a>Demo Blocks <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul>
+                    <li><a>Headers</a></li>
+                    <li><a>Features</a></li>
+                    <li><a>Pricing Table & Article</a></li>
+                    <li><a>Team & Testimonial</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div id="buyBtn" class="buttond-div">
+              <a>Buy Now</a>
+            </div>
+          </div>
+          <div onclick="toggleBars()" class="toggle-bars">
+            <i class="fa fa-bars"></i>
           </div>
         </div>
       </div>
     </div>
-  </header> 
-
+    
+    <!-- Hero image -->
+    <div class="full-img">
+      <div class="overly">
+        <div class="banner">
+          <div class="content-text">
+            <h3>Created to save your time</h3>
+            <h1>Time Planner App</h1>
+          </div>
+          <div class="banner-btn">
+            <a class="btn-a"><i class="fa fa-android" aria-hidden="true"></i> Google Play</a>
+            <a class="btn-a"><i class="fa fa-apple" aria-hidden="true"></i> App Store</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Full contents -->
   <section class="full-contents">
     <div class="container">
+      <div class="full-contents-wrapper">
         <div class="video-left clear">
-          <iframe width="100%" height="341" src="https://www.youtube.com/embed/7MnP25BL-wI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+          <iframe width="100%" height="341" src="https://www.youtube.com/embed/7MnP25BL-wI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="content-head">
           <h1>Watch a video on how to use our app</h1>
           <p>It’s not just about recording employee hours. It’s about understanding employee availability. It’s about hitting project deadlines — while staying on budget. It’s knowing you’ll never have to update another Excel spreadsheet. It’s about making things easy. It’s giving your team the tools they need to do their jobs well. And the insights to work more effectively than ever before.</p>
         </div>
       </div>
-  
+    </div>
   </section>
+  
+  <!-- Full about -->
   <section class="full-about">
     <div class="container">
       <div class="header-1">
@@ -137,6 +155,8 @@
       </div>
     </div>
   </section>
+  
+  <!-- Price section -->
   <section class="price-section">
     <div class="container">
       <div class="header-1">
@@ -162,7 +182,7 @@
             </ul>
           </div>
           <div class="pricing-btn btn-a">
-            <a href="#">Get Free Now</a>
+            <a>Get Free Now</a>
           </div>
         </div>
         <div class="page-header">
@@ -170,7 +190,7 @@
             <h3>Free Version</h3>
             <h1>$ 10 <span>/ month</span></h1>
             <h4>Who is this for?</h4>
-            <p>The version for business people having a tight schedule</p>
+            <p>The version for business people having a schedule</p>
           </div>
           <div class="pricing-item">
             <ul>
@@ -183,7 +203,7 @@
             </ul>
           </div>
           <div class="pricing-btn btn-a">
-            <a href="#">Get Free Now</a>
+            <a>Get Free Now</a>
           </div>
         </div>
         <div class="page-header">
@@ -204,13 +224,14 @@
             </ul>
           </div>
           <div class="pricing-btn btn-a">
-            <a href="#">Get Free Now</a>
+            <a>Get Free Now</a>
           </div>
         </div>
-  
       </div>
     </div>
   </section>
+  
+  <!-- Team section -->
   <section class="team-div">
     <div class="container">
       <div class="header-1">
@@ -256,6 +277,8 @@
       </div>
     </div>
   </section>
+  
+  <!-- Newsletter section -->
   <section class="newsletter-section">
     <div class="container">
       <div class="header-1">
@@ -265,45 +288,49 @@
       <div class="input-section">
         <form action="#">
           <input placeholder="E-mail Address" type="email" name="email" class="form-input">
-         <button class="submit-btn" type="submit">Subscribe</button>
+          <button class="submit-btn" type="submit">Subscribe</button>
         </form>
       </div>
     </div>
   </section>
+  
+  <!-- Banner ADS section -->
   <section class="bannar-ads">
     <div class="container">
       <div class="full-ads">
-       <div class="full-content-text clear">
-        <div class="heading-01">
-          <h1>What's new?</h1>
-        </div>
-        <div class="full-bannar-ads clear">
-          <div class="left-img">
-            <img style="width: 300px; height: auto;" src="image/02.jpg" alt="photo">
+        <div class="full-content-text clear">
+          <div class="heading-01">
+            <h1>What's new?</h1>
           </div>
-          <div class="full-ads-text">
-            <h1>Reporting</h1>
-            <p>Highly flexible reports to analyze time the way you want</p>
-          </div>
-        </div>
-       </div>
-       <div class="full-content-text-2">
-        <div class="heading-02">
-          <p>Accurate employee time tracking software for reporting, invoicing and painless payroll. Trusted by over 2,000 businesses in more than 70 countries. </p>
-        </div>
-        <div class="full-bannar-ads clear">
-          <div class="left-img">
-            <img style="width: 300px; height:auto;" src="image/03.jpg" alt="photo">
-          </div>
-          <div class="full-ads-text">
-            <h1>Invoicing</h1>
-            <p>Create invoices from time entries and send them to your clients</p>
+          <div class="full-bannar-ads clear">
+            <div class="left-img">
+              <img style="width: 280; height: auto;" src="image/02.jpg" alt="photo">
+            </div>
+            <div class="full-ads-text">
+              <h1>Reporting</h1>
+              <p>Highly flexible reports to analyze time the way you want</p>
+            </div>
           </div>
         </div>
-       </div>
+        <div class="full-content-text-2">
+          <div class="heading-02">
+            <p>Accurate employee time tracking software for reporting, invoicing and painless payroll. Trusted by over 2,000 businesses in more than 70 countries. </p>
+          </div>
+          <div class="full-bannar-ads clear">
+            <div class="left-img">
+              <img style="width: 280; height:auto;" src="image/03.jpg" alt="photo">
+            </div>
+            <div class="full-ads-text">
+              <h1>Invoicing</h1>
+              <p>Create invoices from time entries and send them to your clients</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  
+  <!-- Testimonial section -->
   <section class="testiomnial">
     <div class="container">
       <div class="header-1 head">
@@ -315,86 +342,104 @@
           <div class="tastimonial-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
           </div>
-         <div class="t-member clear">
-          <div class="full-user">
-            <img src="image/face1.jpg" alt="photo">
+          <div class="t-member clear">
+            <div class="full-user">
+              <img src="image/face1.jpg" alt="photo">
+            </div>
+            <div class="user-name">
+              <h4>Jason Doe</h4>
+              <span>User</span>
+            </div>
           </div>
-          <div class="user-name">
-            <h4>Jason Doe</h4>
-            <span>User</span>
-          </div>
-         </div>
         </div>
         <div class="testimonial-full clear">
           <div class="tastimonial-content">
-           
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
           </div>
-         <div class="t-member clear">
-          <div class="full-user">
-            <img src="image/face2.jpg" alt="photo">
+          <div class="t-member clear">
+            <div class="full-user">
+              <img src="image/face2.jpg" alt="photo">
+            </div>
+            <div class="user-name">
+              <h4>Amanda Swon</h4>
+              <span>User</span>
+            </div>
           </div>
-          <div class="user-name">
-            <h4>Amanda Swon</h4>
-            <span>User</span>
-          </div>
-         </div>
         </div>
         <div class="testimonial-full clear">
           <div class="tastimonial-content">
-           
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
           </div>
-         <div class="t-member clear">
-          <div class="full-user clear">
-            <img src="image/face4.jpg" alt="photo">
+          <div class="t-member clear">
+            <div class="full-user clear">
+              <img src="image/face4.jpg" alt="photo">
+            </div>
+            <div class="user-name">
+              <h4>Jane Olsen</h4>
+              <span>User</span>
+            </div>
           </div>
-          <div class="user-name">
-            <h4>Jane Olsen</h4>
-            <span>User</span>
-          </div>
-         </div>
         </div>
+      </div>
     </div>
   </section>
+  
+  <!-- Contact section -->
   <section class="contect-div">
     <div class="container">
       <div class="full-contact">
         <div class="left-map clear">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.8223908687!2d90.27923710646988!3d23.78088745708454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2ssg!4v1618916354335!5m2!1sen!2ssg" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.8223908687!2d90.27923710646988!3d23.78088745708454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2ssg!4v1618916354335!5m2!1sen!2ssg" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
         <div class="right-div">
           <div class="text-div">
             <h2>Contact Us</h2>
             <p>Contact us if you have any questions and we will contact you. We appreciate user feedback and be sure to take into account your wishes.</p>
             <div class="form-div clear">
-              <form action="#">
+              <form>
                 <input placeholder="E-mail Address" type="email" name="email" class="form-input w100">
-               <input placeholder="Name" type="name" name="text" class="form-input w50 left clear">
-               <input placeholder="Your Phone" type="number" name="number" class="form-input w50 right clear" >
-               <textarea name="text" class="form-input w100" placeholder="Message"></textarea>
-               <button class="submit-btn w100" type="submit">Send</button>
+                <div class="input-group">
+                  <input placeholder="Name" type="name" name="text" class="form-input w50">
+                  <input placeholder="Your Phone" type="number" name="number" class="form-input w50">
+                </div>
+                <textarea name="text" class="form-input w100" placeholder="Message"></textarea>
+                <button class="submit-btn w100" type="submit">Send</button>
               </form>
             </div>
           </div>
-         
         </div>
       </div>
     </div>
   </section>
+  
+  <!-- Footer section -->
   <footer class="footer-div">
     <div class="container">
       <div class="full-footer clear">
         <div class="copyright">
-          <h3><i class="fa fa-copyright"></i> All Are Reserved By The Freelancer Nayem</h3>
+          <h3><i class="fa fa-copyright"></i> All Righ Are Reserved By The Freelancer Nayem</h3>
         </div>
         <div class="social-icon">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-youtube"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a><i class="fa fa-facebook"></i></a>
+          <a><i class="fa fa-youtube"></i></a>
+          <a><i class="fa fa-twitter"></i></a>
+          <a><i class="fa fa-instagram"></i></a>
         </div>
       </div>
     </div>
   </footer>
+  <script>
+    function toggleBars() {
+      const navigation = document.getElementById('navigation');
+      if (navigation.style.display === "block") {
+        navigation.style.display = "none";
+      }
+      else {
+        navigation.style.display = "block";
+        buyBtn.style.display = "block";
+      }
+    }
+  </script>
 </body>
+
 </html>
